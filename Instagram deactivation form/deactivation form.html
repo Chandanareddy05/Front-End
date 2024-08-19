@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Account Deactivation Form</title>
+    <style>
+        fieldset{
+            margin-left: 500px;
+            width: 200px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Instagram Account Deactivation Form</h2>
+    <form action="deactivation respone.html" method="post">
+        <fieldset>
+        <label for="username">Instagram Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="reason">Reason for Deactivation:</label><br>
+        <select id="reason" name="reason" required>
+            <option value="personal">Personal Reasons</option>
+            <option value="privacy">Privacy Concerns</option>
+            <option value="inactive">Account Inactivity</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Deactivate Account">
+    </fieldset>
+    </form>
+</body>
+</html>
