@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        fieldset{
+            width: 500px;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align = "center"><b>Student Registration Form</b></h1>
+    <form action="" method="post">
+        <fieldset>
+      
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" >
+        <br><br>
+        <label for="Father Name">Father Name:</label>
+        <input type="text" name="Father Name" id="Father Name">
+        <br><br>
+        <label for="Mother Name">Mother Name:</label>
+        <input type="text" name="Mother Name" id="Mother Name">
+        <br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <label for="10th marks">10th Marks (in %):  </label>
+        <input type="text" name="1oth marks" id="10th marks">
+        <br><br>
+        <label for="Intermediate marks">Intermediate Marks(in %):</label>
+        <input type="text" name="Intermediate marks" id="Intermediate Marks">
+        <br><br>
+        <label for="program">Program:</label>
+        <select name="program" id="program">
+        <option value="undergraduate">undergraduate</option>
+        <option value=" Postgraduate">PostGraduate</option>
+        <option value="Phd">PhD</option>
+        </select> 
+        <br><br>
+        <label for="course">Course of Study:</label>
+        <select name="Course" id="Course">
+        <option value="B.Tech">B.Tech</option>
+        <option value="B.com">B.Com</option>
+        <option value="BBA">BBA</option>
+        <option value="MBA">MBA</option>
+        <option value="MCA">MCA</option>
+        </select>
+        <br><br>
+        <label for="Address">Address:</label><br>
+        <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br><br>
+     <input type="submit" value="Register">
+    </fieldset>
+    </form>
+</body>
+</html>
