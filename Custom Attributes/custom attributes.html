@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom data</title>
+</head>
+<body>
+<h1>Courses</h1>
+<p>Click on the coursename to see it's description :</p>
+<ul>
+  <li onclick="showDetails(this)" id="DS" data-course="y using data structures, you can write more efficient, scalable, and maintainable code.">Data Structures</li><br>
+  <li ondblclick="showDetails(this)" id="DBMS" data-course="A Database Management System (DBMS) is a software system that allows you to define, create, maintain, and manipulate databases.">Data Base Managment Systems</li>  <br>
+  <li onmouseenter="showDetails(this)" id="java" data-course="Java is a high-level, object-oriented programming language that is designed to be platform-independent">Java</li><br>
+</ul>
+<script>
+    function showDetails(course) {
+      var courses = course.getAttribute("data-course");
+      alert(course.innerHTML + " is a " + courses + ".");
+    }
+    </script>
+</body>
+</html>

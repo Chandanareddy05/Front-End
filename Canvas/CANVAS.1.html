@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Objects</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="400"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var c = canvas.getContext('2d');
+
+        c.fillStyle = 'black';
+        c.fillRect(50, 50, 100, 50);
+        
+        c.beginPath();
+        c.arc(200, 100, 30, 0, 2 * Math.PI);
+        c.fillStyle = 'orange';
+        c.fill();
+        c.beginPath();
+        c.moveTo(300, 50);
+        c.lineTo(400, 100);
+        c.strokeStyle = 'blue';
+        c.lineWidth = 3;
+        c.stroke();
+        c.font = '20px Arial';
+        c.fillStyle = 'black';
+        c.fillText('Hello, Canvas!', 450, 80);
+        
+        
+    </script>
+</body>
+</html>
